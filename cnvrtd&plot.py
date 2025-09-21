@@ -24,14 +24,3 @@ plt.xlabel("Road Length (Y axis)")
 plt.ylabel("Road Width (X axis)")
 plt.title("Road Depth Heatmap")
 plt.show()
-
-# === Step 4: Plot as 3D surface ===
-fig = plt.figure(figsize=(12, 7))
-ax = fig.add_subplot(111, projection="3d")
-ax.plot_surface(X, Y, road_matrix, cmap="viridis", edgecolor="none")
-
-ax.set_xlabel("Road Length (Y axis)")
-ax.set_ylabel("Road Width (X axis)")
-ax.set_zlabel("Depth")
-ax.set_title("3D Road Depth Surface")
-plt.show()
