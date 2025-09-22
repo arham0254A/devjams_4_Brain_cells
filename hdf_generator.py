@@ -89,10 +89,7 @@ for i in range(total_potholes):
     mask = create_pothole_mask_rough(local_shape, local_center, (r_radius, c_radius), max_depth, rotation)
     road_matrix[r_min:r_max, c_min:c_max] = np.maximum(road_matrix[r_min:r_max, c_min:c_max], mask)
 
-
-# ==========================================================
 # 4. Save to Chunked H5 File and Add Metadata
-# ==========================================================
 
 OUTPUT_H5_PATH = "india_road_pothole_data_dispersed_0.1m.h5"
 

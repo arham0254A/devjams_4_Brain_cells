@@ -14,8 +14,9 @@ X, Y = np.meshgrid(x, y)   # Mesh for plotting
 # === Step 3: Plot as heatmap ===
 plt.figure(figsize=(5,100))
 plt.imshow(road_matrix, cmap="binary", origin="lower", aspect="auto")
-plt.colorbar(label="Depth")
-plt.xlabel("Width")
-plt.ylabel("Height")
+plt.colorbar(label="Depth",)
+plt.xlabel("")
+plt.ylabel("")
 plt.title("Potholes Detection on Roads")
 plt.show()
+
